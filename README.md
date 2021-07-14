@@ -1,3 +1,9 @@
+# ReadABit
+ ### Goals and Challenges
+ - Create fullstack app (backend is provided, but use your own `URI string`)
+ - Convert class based app to hooks (on new branch. Ex: `hooks-solution`, keep class solution on `main` branch)
+ - Add redux (on new branch. Ex: `redux-solution`)
+
 # STEP 1
 > Set Up & Get Books
 
@@ -5,7 +11,7 @@ In this step we will add functionality to a full stack React application for ret
 
 ## Instructions
 
-* Clone this Initial [Repo](#) in your editor and run `npm install` at the project's root.
+* Clone this Initial [Repo](https://github.com/urakymzhan/ReadABit-starter-code) in your editor and run `npm install` at the project's root.
 
 * This application uses a Mongo database, so be sure to have a `mongodb atlas collection` ready.
 
@@ -19,9 +25,13 @@ In this step we will add functionality to a full stack React application for ret
 
 * Run `npm start` at the project root to start the application.
 
+* If you having errors: try deleting **node_modules** from both client and server. Then rerun `npm install` and `npm start`.
+
 * Open your browser to [localhost:3000](http://localhost:3000) and take a moment to study the rendered application.
 
   * This example is a readabit application. Currently the app **isn't** fully functional.
+
+![initial homepage](homepage.png)
 
 * Open up `client/src/pages/Books.js` and add code so that when the component mounts, it performs an AJAX request to retrieve all of the books in the database. Once the AJAX request is complete, it should set `this.state.books` equal to the array of books.
 
@@ -92,13 +102,44 @@ In this step we will add React Router to the Books application in order to rende
 
 * A - B will only require you modify the `client/src/App.js` file.
 
-* The React Router DOM library should already be installed.
+* The React Router DOM library should already be installed. Looks inside `client/package.json`
 
 * The React Router documentation is your friend!
 
-* Ask the instructor or a TA if you're having difficulty understanding any of the activity requirements.
+* Ask the instructor/TA if you're having difficulty understanding any of the activity requirements.
 
 
-# Stretch Challenge
+# STEP 4
+### Stretch Challenge
 
-- Can you convert this project to use [React Hooks](https://reactjs.org/docs/hooks-intro.html)?
+> Converting to hooks 
+
+- Can you convert this project to use React Hooks?
+
+### Hints
+- Create a new branch called `hooks-solution` from main.
+
+- The only file you need to modify is `Books.js`.
+
+- Documentation of [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+
+
+# STEP 5
+### Stretch Challenge
+
+> Redux solution. Integrate redux.
+
+### Hints
+- Create a new branch called `redux-solution` from main.
+
+- Inside `client/src` create a new folder called **redux**
+
+- Keep all redux logic inside this folder. Write your actions/reducers/store/middlewares.
+
+- You still need to be able to perform operations inside `API.js` file.
+
+- Don't forget to get **details** of each books inside Details page.
+
+- The only file you need to modify is `Books.js`.
+
+- Documentation of [Redux](https://redux.js.org/tutorials/fundamentals/part-2-concepts-data-flow)
