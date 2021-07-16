@@ -37,7 +37,7 @@ class Books extends Component {
             <form>
               <Input name="title" placeholder="Title (required)" />
               <Input name="author" placeholder="Author (required)" />
-              <TextArea name="synopsis" placeholder="Synopsis (Optional)" />
+              <TextArea name="summary" placeholder="Summary (Optional)" />
               <FormBtn>Submit Book</FormBtn>
             </form>
           </Col>
