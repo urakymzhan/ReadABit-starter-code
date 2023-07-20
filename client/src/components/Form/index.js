@@ -13,14 +13,18 @@ export function Input(props) {
 export function TextArea(props) {
   return (
     <div className="form-group mt-4">
-      <textarea className="form-control" rows="20" {...props} />
+      <textarea className="form-control" rows="8" {...props} />
     </div>
   );
 }
 
 export function FormBtn(props) {
   return (
-    <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-outline-primary mt-4">
+    <button
+      {...props}
+      style={{ float: "right", marginBottom: 10 }}
+      className="btn btn-outline-primary mt-4"
+    >
       {props.children}
     </button>
   );
